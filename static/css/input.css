@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: "Exo 2", sans-serif;
+    animation-timeline: scroll(block); /* Default */
+animation-timeline: scroll(inline);
+animation-timeline: scroll(y);
+animation-timeline: scroll(x);
+}
+
+#markdown-content div {
+    font-size: 24px; /* Kích thước chữ cho tiêu đề */
+    font-weight: bold; /* In đậm cho tiêu đề */
+    color: #333; /* Màu chữ cho tiêu đề */
+  }
+  
+  #markdown-content p {
+    line-height: 1.6; 
+    margin-bottom: 16px;
+  }
+
+  #markdown-content img {
+    width: 100%;
+  }
+  
+  #markdown-content a {
+    color: #007bff; /* Màu của các liên kết */
+    text-decoration: none; /* Gỡ bỏ gạch chân của liên kết */
+  }
+  
+  #markdown-content a:hover {
+    text-decoration: underline; /* Gạch chân khi di chuột qua liên kết */
+  }
+  
+  #markdown-content ul,
+  #markdown-content ol {
+    margin-bottom: 16px; /* Khoảng cách giữa danh sách và các đoạn */
+  }
+  
+  #markdown-content li {
+    margin-bottom: 8px; /* Khoảng cách giữa các mục trong danh sách */
+  }
+  
+  #markdown-content pre {
+    background-color: #f8f9fa; /* Màu nền cho mã nguồn */
+    padding: 16px; /* Khoảng cách bên trong mã nguồn */
+    border-radius: 4px; /* Bo tròn góc cho mã nguồn */
+    overflow-x: auto; /* Cho phép cuộn ngang nếu mã nguồn quá dài */
+  }
+  
+  #markdown-content code {
+    font-family: Consolas, monospace; /* Font chữ cho mã nguồn */
+  }
