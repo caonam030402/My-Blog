@@ -1269,10 +1269,6 @@ input:checked + .toggle-bg{
   margin-top: 1.25rem;
 }
 
-.mt-24{
-  margin-top: 6rem;
-}
-
 .block{
   display: block;
 }
@@ -1393,8 +1389,28 @@ input:checked + .toggle-bg{
   width: 16rem;
 }
 
+.w-\[50\%\]{
+  width: 50%;
+}
+
 .w-full{
   width: 100%;
+}
+
+.w-\[30\%\]{
+  width: 30%;
+}
+
+.w-\[20\%\]{
+  width: 20%;
+}
+
+.w-\[10\%\]{
+  width: 10%;
+}
+
+.w-\[8\%\]{
+  width: 8%;
 }
 
 .max-w-full{
@@ -1557,16 +1573,15 @@ input:checked + .toggle-bg{
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
-.space-y-4 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+.divide-y > :not([hidden]) ~ :not([hidden]){
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
 }
 
-.space-y-5 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+.divide-gray-100 > :not([hidden]) ~ :not([hidden]){
+  --tw-divide-opacity: 1;
+  border-color: rgb(243 244 246 / var(--tw-divide-opacity));
 }
 
 .self-center{
@@ -1772,6 +1787,11 @@ input:checked + .toggle-bg{
   padding-right: 1.25rem;
 }
 
+.px-9{
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -1800,6 +1820,11 @@ input:checked + .toggle-bg{
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .pe-4{
@@ -1941,14 +1966,14 @@ input:checked + .toggle-bg{
   color: rgb(30 66 159 / var(--tw-text-opacity));
 }
 
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-red-800{
   --tw-text-opacity: 1;
   color: rgb(155 28 28 / var(--tw-text-opacity));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .opacity-0{
@@ -2416,12 +2441,6 @@ body {
 
   .md\:flex-row{
     flex-direction: row;
-  }
-
-  .md\:space-x-0 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-x-reverse: 0;
-    margin-right: calc(0px * var(--tw-space-x-reverse));
-    margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:space-x-8 > :not([hidden]) ~ :not([hidden]){
